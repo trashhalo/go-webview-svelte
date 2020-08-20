@@ -23,6 +23,7 @@ func httpServer() *httptest.Server {
 		} else if err != nil {
 			panic(err)
 		}
+		defer file.Close()
 
 		w.Header().Set("Content-Type", mime.TypeByExtension(url))
 		_, err = io.Copy(w, file)
