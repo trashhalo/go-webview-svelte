@@ -16,3 +16,6 @@ make deps build
 ```bash
 ./go-webview-svelte
 ```
+
+## after cloning
+You probably want to delete .git and change the project name in go.mod and frontend/package.json
