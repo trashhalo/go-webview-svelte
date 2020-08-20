@@ -9,5 +9,5 @@ deps:
 
 build:
 	cd frontend && npm run build  
-	$(GOPATH)/bin/pkger -include /frontend/public
+	$(GOPATH)/bin/pkger
 	go build .

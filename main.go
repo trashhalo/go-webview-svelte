@@ -34,6 +34,8 @@ func httpServer() *httptest.Server {
 }
 
 func main() {
+	pkger.Include("/frontend/public")
+
 	srv := httpServer()
 	defer srv.Close()
 
